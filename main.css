@@ -1,9 +1,49 @@
 body{
-    background-color: aqua
-}
-h1{
-    color: brown
-}
-h2{
+    background-color: black;
+    text-align: center;
+    
 
+}
+
+h1{
+    color: brown;
+}
+
+.words{
+    color: rgb(50, 50, 50);
+    line-height: 1;
+}
+
+.words span{
+    font-size: 5vw;
+    display: inline-block;
+    animation: move 2s ease-in-out infinite ;
+}
+
+@keyframes move{
+    0%{
+        transform: translate(-33%, 0);
+    }
+    25%{
+        perspective: 5px;
+    }
+    50%{
+        text-shadow: 0 15px 40px rgba(0, 0, 0, 0,6);
+    }
+    100%{
+        transform: translate(33%, 0);
+    }
+}
+
+.words span :nth-child(2){
+    animation-delay: 0.5s
+}
+.words span :nth-child(3){
+    animation-delay: 1s
+}
+.words span :nth-child(4){
+    animation-delay: 1.5s
+}
+.words span :nth-child(5){
+    animation-delay: 2s
 }

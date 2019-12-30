@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
-<title>Ninja of Coolness's Website</title>
+  <head>
+    <style>
+    .collapsible {
+      background-color:black;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      color: #f3f3f3;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: black;
+      color: #f3f3f3;
+
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      font-weight: bold;
+      float: right;
+      color: #f3f3f3;
+
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    </style>
+<title>I am (FNU) Devansh</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Website for me">
-<meta name="viewport" content="width=device width, initial-scale=1.0">
+<meta name="description" content="Personal website for Devansh">
 <!--Keywords to find me; add more as they come-->>
-  <meta name="keywords" content="Devansh, Computer Science, Python, Java, Web Dev, Student, Intern, Good, Job "> 
+<meta name="keywords" content="Devansh, Computer Science, Python, Java, Web Dev, Student, Intern, Good, Job "> 
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +59,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-black">
+</head>
+<body class="w3-black" width="200px">
   <!--Start of popup-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
     <style type="text/css">
@@ -49,8 +89,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     z-index: 101;
     }
     .cnt223{
-    min-width: 600px;
-    width: 600px;
+    min-width: 200px;
+    width: 400px;
     min-height: 150px;
     margin: 100px auto;
     background: #f3f3f3;
@@ -124,11 +164,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <img src="pics\me.jpg" style="width:100%" alt="Good pic of me" >
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
+    <p>Home</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-pencil-square w3-xxlarge"></i>
+    <p>Education</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>About</p>
   </a>
   <a href="#Skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-folder w3-xxlarge"></i>
@@ -153,8 +197,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">Education</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
     <a href="#Skills" class="w3-bar-item w3-button" style="width:25% !important">Skills</a>
     <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">Projects</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Recordings and Pictures</a>
@@ -166,9 +211,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-   <!-- <img src="pics\me.png" alt="get good pic of me" class="w3-image" width="500" height="500">-->
-    <video width="320" height="240" controls>
-      <source src="Recordings\Piano.mp4" type="video/mp4">
+   <!-- <img src="pics\me.png" alt="Devansh" class="w3-image" width="500" height="500">-->
+   <h5>HealthGuide: the App that we built for AppJamming 
+    Summit. <br>We won in Singapore, and were called to present this at Hong Kong</h5> 
+   <video width="320" height="240" controls >
+      <source src="Recordings/HealthGuide.mp4" type="video/mp4" alt="Devansh HealthGuide">
     </video>
     <h1> I am Devansh</h1>
     <h3>Student Athlete, Musician, Problem Solver</h3>
@@ -184,118 +231,308 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </h1>
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey"> Devansh</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h1>Education</h1>
-    <h4 style="color: #d91900">Computer Science Major(with Math Immersion) at: <img src="pics\RIT.png" style="width:20%;height: 20%">
-    Graduation: 2023</h4>
-    <h1>
-      Everywhere I've studied for Highschool
-    </h1>
-    <h4>
-      <img src="pics\GIIS.png" style="width:20%;height: 20%">
-      Global Indian International School, Singapore: 2016-2018
-      <br>
-      <img src="pics\TSRS.jpg" style="width:20%;height: 20%">
-      The Shri Ram School, India: 2015-2016
-      <br>
-      <img src="pics\CRLS.jpeg" style="width:20%;height: 20%">
-      Cambridge Rindge and Latin School, USA: 2015 (Jan-June)
-      <br>
-      <img src="pics\RVS.png" style="width:20%;height: 20%">
-      Rishi Valley School, India: 2010-2015
-    </h4>
+  <!-- Education Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="education">
+          <h1 class="w3-text-light-grey"> Devansh</h1>
+          <hr style="width:200px" class="w3-opacity">
+          <h1>Education</h1>
+          <h4 >
+           <button class="collapsible"> 
+          <img src="pics\RIT.png" style="width:20%;height: 20%">
+          >RIT</button>
+              <div class="content">
+                <p style="margin-left: 20px"> 
+                  <p>
+                    At  <a href="https://www.rit.edu/" target="_blank" rel="me">Rochester Institute of Technology</a> (RIT) I am part of various college prganizations that have exposed to different people. I have maintained a 
+                    3.03 GPA while participating in various college activities. I am currently looking for interesting and relevant
+                    co-ops/internships to supplement my learning. In the college I am registered as FNU Devansh because of American 
+                    procedures.
+                    
+                  </p>
+                  Graduation: 2023
+                </p>
+              </div>
+            Computer Science Major and a possible  Math Double Major.
+           
+        </h4>
+        <h4>
+            <button class="collapsible" >
+              <img src="pics\GIIS.png" 
+            style="width:20%;height: 20%">GIIS
+            </button>
+            <div class="content">
+              <p style="margin-left: 20px">
+                I spent 2 years in Singapore. I was part of the IBDP programme at GIIS and managed to secure all
+                my college credits. Along with that I started participating in hackathons and various socio-political
+                events to help me better under the dynamics between different South-East Asian countries. 
+              </p>
+              </div> <!--GIIS-->
+              <a href="https://www.globalindianschool.org/" target="_blank" rel="me">Global Indian International School, Singapore: July 2016- May 2018
+              </a>
+          <br>
+            <button class="collapsible" 
+            ><img src="pics\TSRS.jpg" 
+            style="width:20%;height: 20%"></a>
+          TSRS</button>
+            <div class="content">
+              <p style="margin-left: 20px">
+                I finshed 10th grade at TSRS. Due to the nature of the Indian Education system I spent a majority of 
+                my time there playing catch-up and taking tests. Nevertheless, I was able to participate in a an assembly
+                and some other events, and made some really good friends.   
+              </p>
+              </div> <!-- TSRS -->
+              <a href="http://ml.tsrs.org/" target="_blank" rel="me">The Shri Ram School, India: July 2015- May 2016
+              </a>
+          
+        <br>
+        
+        <button class="collapsible" ><img src="pics\CRLS.jpeg" 
+            style="width:20%;height: 20%">CRLS
+          </button>
+            <div class="content">
+                <p style="margin-left: 20px">
+                  I was a student at CRLS while my Mom completed her 2nd term at Harvard Kennedy University.
+                  I had the benefit of being able to attend both CRLS and HKS (and Harvard) events. This experience 
+                  played a huge role in my decision to pursue my college education in the States. Dealing with the transition
+                  was hard for, especially towards the beginning where I had to manage dual schooling with RV along with everything
+                  else. However, it was worth the effort and the experience gave me a lot of exposure and some lifeling 
+                  friends. 
+                </p>   
+              </div> <!-- CRLS -->
+             
+              <a href="https://crls.cpsd.us/" target="_blank" rel="me"> Cambridge Rindge and Latin School, USA: 2015 (Jan-June)
+              </a>
+
+        
+          <br>
+          
+          <button class="collapsible" 
+          ><img src="pics/RVS.png" 
+          style="width:20%;height: 20%">
+        RVS</button>
+          <div class="content">
+              <p style="margin-left: 20px">
+                RVS was where I spent many of my formative years. While insulated from much of the world, 
+            it gave me a deeper appreciation for the complexity of the challenges faced by Rural India. 
+            The boarding school enviroment was crucial to me learning many important lessons such as minimalism, cleanliness
+            and simplicity; values I hold dear to my heart. It also led to me developing my passions for nature and Sustainable
+            Development. 
+              </p>   
+            </div> <!-- RVS -->
+            
+            <a href="https://crls.cpsd.us/" target="_blank" rel="me"> Rishi Valley School, India: 2010-2015
+              </a>
+
+          </h4>
+          </div><!--- Ended the content -->>
+        </div> <!--End of education div-->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey"> Devansh</h2>
+      <hr style="width:200px" class="w3-opacity">  
     <h1>
       About me
     </h1>
-    <h4>My coding experience:
+  
+    <a href="Docs\Resume Devansh.pdf"  target="_blank" rel="me"><button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> See Resume
+    </button>
+  </a>
+
+    <a href="Docs\CV Devansh.pdf"  target="_blank" rel="me"><button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> See CV
+    </button>
+  </a>
+  <h4>My work/development experience</h4>
+  <button class="collapsible" >My experiences</button>
+    <div class="content">
+      <h4>
+      I have spent a lot of time trying to learn from various sources to improve my problem solving skills.
+      My Resume contains additional details. My experiences includes: 
       <ul>
           <li>Research Assistant under Dr. Aditya Abhyankar, 
             Dean of Technology, Savitribai Phule Pune University</li>
           <li>Intern under Phani Bhushan, CEO and Founder of Anant Computing</li>
-          <li>Various hackathons, challenges on coding , and personal projects</li>
+          <li>Various hackathons, HackerRank , and personal projects (see projects section)</li>
           <li>Project Euler</li>
       </ul>
-    </h4>
-    <h4>
-      My passions:
+      
+      </h4>
+    </div> <!-- Experiences -->
+    <h4>My Interests</h4>    
+    <button class="collapsible">Interests</button>
+    <div class="content">
+      <h4>
+        I am passionate about various fields. Ideally, I would like to work in one of the following:
+        <ul>
+            <li>Sustainable Development</li>
+            <li>Mental Health</li>
+            <li>Mathematical modeling</li>
+            <li>Environment</li>
+            <li>Healthcare</li>
+            <li>Privacy and Cyber Security</li>
+            <li>Any Open Source projects</li>
+            <li>Any other ways math and computer science can used to takle real life problems</li>
+        </ul>
+      </h4>
+    </div> <!-- Passions -->>
+    
+    <h4>Campus involvement<br>
+      I am involved with several on campus activities and organizations. They help me balance the various aspects
+      of my life and have been crucial to sharpening my time management and commitment. We have weekly meetings 
+      for all these. 
       <ul>
-          <li>Sustainable Development</li>
-          <li>Mental Health</li>
-          <li>Mathematical modeling</li>
-          <li>Environment</li>
-          <li>Healthcare</li>
-          <li>Privacy and Cyber Security</li>
-          <li>Any other ways math and computer science can used to takle real life problems</li>
-      </ul>
-    </h4>
-    <h4>
-      Groups I'm involved with:
-      <ul>
-          <li>RIT Varsity Crew</li>
-          <li>RIT Jam Club</li>
-          <li>Technical Difficulties: Our band that plays in various music events happening
-            around us. I play the cajones.
+          <li>
+            <h4 >
+              <button class="collapsible" 
+              ><img src="pics\RIT.png" style="width:20%;height: 20%">
+              ></button>
+                  <div class="content">
+                    <p style="margin-left: 20px"> 
+                      I was a walk-on athelete, and was fortunate to be part of the team. We had 10 practices/week (Sundays off)
+                with weight training sessions added during the off season. The training was important in helping me developing
+                traits like commitment and dedication while boosting my ability to work in a team and time-management. I am 
+                currently taking a break from the team because of an injury to my right knee.
+                    </p>
+                  </div>
+                  <a href="https://www.ritathletics.com/index.aspx?path=mcrew"  target="_blank" rel="me">RIT Varsity Crew</a>
+            </h4>
           </li>
-          <li>THE NATIONAL SOCIETY OF LEADERSHIP AND SUCCESS (member)</li>
-          <li>Tree Club</li>
-          <li>RIT Anime Club</li>
+
+          <li>
+            <h4 >
+              <button class="collapsible" 
+              ><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/42140302_2058322134199368_8884621931790204928_n.jpg?_nc_cat=101&_nc_ht=scontent-lga3-1.xx&oh=22f2287552d796aea232854c3408728a&oe=5D965295" style="width:20%;height: 20%">
+            </button>
+                  <div class="content">
+                    <p style="margin-left: 20px"> 
+                      We meet up and jam out different songs. We  have weekly meetings for 2 hours a session. I joined Jam Club 
+                      without knowing any instruments. I sat on the Cajones, since they the only free instrument at that point. Haven't missed
+                      a meeting since. Fortunately everyone else is really good and I was able to get fairly good with the cajones by 
+                      learning from them.   
+                    </p>
+                  </div>
+                  <a href="https://www.facebook.com/RITJamClub/"  target="_blank" rel="me">RIT Jam Club</a>
+            </h4>
+          </li>
+          
+          <li>
+            <h4 >
+              <button class="collapsible" 
+              ><img src="https://www.nsls.org/sites/all/themes/nsls/logo.png" style="width:20%;height: 20%">
+            </button>
+                  <div class="content">
+                    <p style="margin-left: 20px"> 
+                      I am an inducted member of NSLS. The seminars and workshops on leadership, time management,teamwork, etc 
+              are very interesting and often help me see other perspectives. We also do multiple activities that have 
+              helped us bond, while also implementing some of the lessons we learn.   
+                    </p>
+                  </div>
+                  <a href="https://www.nsls.org/"  target="_blank" rel="me">
+                    THE NATIONAL SOCIETY OF LEADERSHIP AND SUCCESS (member)</a>
+
+                  
+                </h4>
+          </li>
+          
+          <li>
+            Tree Club
+              <p style="margin-left: 20px">
+              Just a couple of people hanging out in a tree talking about various things.  
+            </p>
+          </li>
+          <li>
+            <h4>
+            <button class="collapsible" 
+            a href="https://ritanime.rit.edu/"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-1/c24.24.297.297a/s200x200/312891_150906365002877_43929955_n.jpg?_nc_cat=106&_nc_ht=scontent-lga3-1.xx&oh=7d01542684c07900ea34445a47abb034&oe=5D94BECF" style="width:20%;height: 20%">
+          </a></button>
+          <div class="content">
+            <p style="margin-left: 20px"> 
+              I attend anime club meetings and events as a way to take breaks. Discussing anime and manga with different
+              people and hearing their opinions is always fun and a good way to discover new titles. 
+            </p>
+          </div>
+            RIT Anime Club
+              </h4>
+          </li>
       </ul>
     </h4>
+    
+      Hobbies:</h4>
+      <button class="collapsible"></button>
+<div class="content">
+  <h4>
+  <ul>
+    <li>Soccer </li>
+    <li>Anime</li>
+    <li>Reading</li>
+    <li>Watching fun math videos</li>
+    <li>Gaming</li>
+    <li>Travelling</li>
+    <li>Music</li>
+ </ul>
+  </h4>
+</div>
+
+    
     <h4>
-      Hobbies:
-      <ul>
-         <li>Soccer </li>
-         <li>Anime</li>
-         <li>Reading</li>
-         <li>Sports</li>
-         <li>Watching fun math videos</li>
-         <li>Gaming</li>
-         <li>Travelling</li>
-         <li>Music</li>
-      </ul>
-    </h4>
-    <h4>
-      Favorite YouTube Channels: 
-      <ul>
+      Favorite YouTube Channels:</h4>
+      <button class="collapsible">YouTube</button>
+      <div class="content">
+        <h4>
+        <ul>
           <li>T90Official </li>
-          <li>Siraj Rival</li>
           <li>Spirit Of The Law</li>
           <li>Super Eyepatch Wolf</li>
           <li>Professor Leonard</li>
+          <li>Robert Miles</li>
+          <li>Jacob Sorber</li>
+          <li>Athlean X</li>
           <li>Computerphile</li>
           <li>Tifo Football</li>
           <li>Bundesliga</li>
           <li> Wisecrack</li>
-       </ul>
+       </ul></h4>
+      </div>
     </h4>
     <h4>
       Favorite Authors:
-      <ul>
-        <li>Yuval Noah Harari</li>
-          <li>Dostoevsky </li>
-          <li>Marquis De Sade</li>
-          <li>Junji Ito</li>
-          <li>Kierkgaard</li>
-          <li>Anand Neelkanthan</li>
-          <li>Alan Downey</li>
-          <li>Murakami</li>
-          <li>Ryonosuke Akutagawa</li>
-       </ul>
     </h4>
+      <button class="collapsible">Authors</button>
+  <div class="content">
     <h4>
-      Favorite Movies, TV Series, and Anime:
-      <ul>
-          <li>Peepli Live</li>
-          <li>Yes Minister/PM</li>
-          <li>Black Adder</li>
-          <li>Gintama</li>
-          <li>Shiki</li>
-          <li>Durarara</li>
-      </ul>
+    <ul>
+      <li>Yuval Noah Harari</li>
+        <li>Dostoevsky </li>
+        <li>Marquis De Sade</li>
+        <li>Junji Ito</li>
+        <li>Kierkgaard</li>
+        <li>Anand Neelkanthan</li>
+        <li>Alan Downey</li>
+        <li>Murakami</li>
+        <li>Ryonosuke Akutagawa</li>
+     </ul>
     </h4>
+  </div>
+
+   
+    <h4>
+      Favorite Movies, TV Series, and Anime:</h4>
+      <button class="collapsible">Content</button>
+  <div class="content">
+    <h4>
+    <ul>
+      <li>Peepli Live</li>
+      <li>Jaane Bhi Do Yaaron</li>>
+      <li>Yes Minister/PM</li>
+      <li>Black Adder</li>
+      <li>Silicon Valley</li>
+      <li>Gintama</li>
+      <li>Shiki</li>
+      <li>Durarara</li>
+  </ul>
+  </h4>
+  </div>
+      
   
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Skills">
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
@@ -329,44 +566,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
     <br>
     </div>
-    <!---- Add this section in when yiu stary getting more experience
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-  --->
-    <a href="Docs\CV Devansh.pdf" download="CV Devansh.pdf"><button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> See Resume
-    </button>
-  </a>
-    <!---- Projects section --->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects">
-      <h4>Projects</h4>
-      <ul>
-      <h4><a href="https://github.com/dl1683">Link to my Github</a></h4>
-      <h5><img src="pics/park.jpg" style="width:100px;height:100px;">Detection of Parkinson's using voice samples</h5>
-      <h5><img src="pics/Finger.jpg" style="width:100px;height:100px;">Reconstruction of fingerprints using bozorth and mindtct and genetic algorithms</h5>
-      <h5>This Website</h5>
-      <h5>App for oldage care</h5>
-      <h5>HealthGuide, a fitness app </h5>
-      <h5>Ranger for MATE ROV 2015</h5>
-    </ul>
-    </div>
     
+    
+  
+    <!---- Projects section --->
+     <!-- Portfolio Section
+   ================================================== -->
+   
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey">References</h3>  
     <img src="pics\abhyankar.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
@@ -379,6 +585,39 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End About Section -->
   </div>
   
+  <!--Projects ssection-->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects">
+    <h1>My Projects</h1>
+    <h4>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <p>Parkinson's disease detection. Keywords: Machine learning, Python, Tensorflow, Pytorch, SK-learn, 
+          mutlivariate optimization, Downsampling.
+        </p>
+        <button class="collapsible">Parkinson's</button>
+            <div class="content">
+              <p>This was my most comprehensive project under Dr. Abhyankar. We used the online database 
+                as a model to build our own database and run experiments on it. I was responsible for running
+                different directed and undirected models to test out the nature of the data. I also wrote 
+                cost functions to determine the more important dimensions of the data. <br> In the end , we created 
+                a method to map the multidimensional input data onto a single binary output set. This gave us a 94% 
+                accuracy while not being resource intensive. The algorithm was then formalized as a patent, which has
+                now been monetized. <a href="Docs\Patent Devansh.pdf"  target="_blank" rel="me">View the terms. 
+                </a>    
+              </p>
+            </div>
+      </div>
+
+      <div class="w3-half">
+        
+        <img src="pics\boat.jpg" style="width:60%;height:60%" alt="Devansh crew">
+
+      </div>
+    <!-- End photo grid -->
+    </div>
+    </h4>>
+  </div>
+  <!--End of projects--->
   <!-- Photo Section -->
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">My Photos</h2>
@@ -387,26 +626,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="pics\me0.jpg" style="width:60%;height:60%">
-        <img src="pics\me1.jpg" style="width:60%;height:60%">
-        <img src="pics\me2.jpg" style="width:60%;height:60%">
-        <img src="pics\me3.jpg" style="width:60%;height:60%">
+        <img src="pics\me0.jpg" style="width:60%;height:60%" alt="Devansh 0">
+        <img src="pics\me2.jpg" style="width:60%;height:60%" alt="Devansh 2">
+        <img src="pics\me3.jpg" style="width:60%;height:60%"alt="Devansh 3">
+        
       </div>
 
       <div class="w3-half">
-        <video width="320" height="240" controls>
-          <source src="Recordings\TD.mp4" type="video/mp4">
+        <video width="320" height="240" controls >
+          <source src="Recordings\TD.mp4" type="video/mp4" alt="Devansh playing">
         </video>
         <video width="320" height="240" controls>
-          <source src="Recordings\Thankgiving.mp4" type="video/mp4">
+          <source src="Recordings\Thankgiving.mp4" type="video/mp4" alt="Devansh playing">
         </video>
         <audio width="320" height="240" controls>
-          <source src="Recordings\Island.wav" type="audio/wav">
+          <source src="Recordings\Island.wav" type="audio/wav" alt="Devansh playing">
         </audio>
+        <video width="320" height="240" controls>
+          <source src="Recordings\Piano.mp4" type="video/mp4" alt="Devansh playing">
+        </video>
+        <img src="pics\boat.jpg" style="width:60%;height:60%" alt="Devansh crew">
 
       </div>
     <!-- End photo grid -->
     </div>
+
+
   <!-- End Portfolio Section -->
   
 
@@ -434,19 +679,37 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </p>
     </form>
    End Contact Section 
-  </div>
--->
+  </div> -->
+
+  
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://www.facebook.com/pasha.verma"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/devansh-516004168/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/pasha.verma" rel="me"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/devansh-516004168/" rel="me"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   <!-- End footer -->
   </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
 
+<!--Script for collapsibles-->
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 </body>
 <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </html>
